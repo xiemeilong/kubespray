@@ -40,7 +40,7 @@ before_script:
 .job: &job
   tags:
     - packet
-  image: quay.io/kubespray/kubespray:$KUBESPRAY_VERSION
+  image: quay.azk8s.cn/kubespray/kubespray:$KUBESPRAY_VERSION
   artifacts:
     paths:
       - cluster-dump/

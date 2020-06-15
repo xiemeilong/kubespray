@@ -1,7 +1,7 @@
-# Docker image published at quay.io/kubespray/vagrant
+# Docker image published at quay.azk8s.cn/kubespray/vagrant
 
 ARG KUBESPRAY_VERSION
-FROM quay.io/kubespray/kubespray:${KUBESPRAY_VERSION}
+FROM quay.azk8s.cn/kubespray/kubespray:${KUBESPRAY_VERSION}
 
 ENV VAGRANT_VERSION=2.2.7
 ENV VAGRANT_DEFAULT_PROVIDER=libvirt

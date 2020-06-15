@@ -7,7 +7,7 @@ if [ "$#" -ne 1 ]; then
 fi
 
 VERSION="$1"
-IMG="quay.io/kubespray/vagrant:${VERSION}"
+IMG="quay.azk8s.cn/kubespray/vagrant:${VERSION}"
 
 docker build . --build-arg "KUBESPRAY_VERSION=${VERSION}" --tag "$IMG"
 docker push "$IMG"

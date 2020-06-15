@@ -73,4 +73,4 @@
       no_log: True
 
     - debug:
-        msg: "A public url https://storage.googleapis.com/{{ test_name }}/{{ file_name }}"
+        msg: "A public url https://storage.googleapis.com.cnpmjs.org/{{ test_name }}/{{ file_name }}"

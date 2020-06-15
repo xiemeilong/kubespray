@@ -54,14 +54,14 @@ kubeadm_version: "{{ kube_version }}"
 etcd_version: v3.3.12
 
 # gcr and kubernetes image repo define
-gcr_image_repo: "gcr.io"
-kube_image_repo: "k8s.gcr.io"
+gcr_image_repo: "gcr.azk8s.cn"
+kube_image_repo: "k8s.gcr.azk8s.cn"
 
 # docker image repo define
-docker_image_repo: "docker.io"
+docker_image_repo: "mirror.aliyuncs.com"
 
 # quay image repo define
-quay_image_repo: "quay.io"
+quay_image_repo: "quay.azk8s.cn"
 
 # TODO(mattymo): Move calico versions to roles/network_plugins/calico/defaults
 # after migration to container download
@@ -93,11 +93,11 @@ crictl_supported_versions:
 crictl_version: "{{ crictl_supported_versions[kube_major_version] }}"
 
 # Download URLs
-kubelet_download_url: "https://storage.googleapis.com/kubernetes-release/release/{{ kube_version }}/bin/linux/{{ image_arch }}/kubelet"
-kubectl_download_url: "https://storage.googleapis.com/kubernetes-release/release/{{ kube_version }}/bin/linux/{{ image_arch }}/kubectl"
-kubeadm_download_url: "https://storage.googleapis.com/kubernetes-release/release/{{ kubeadm_version }}/bin/linux/{{ image_arch }}/kubeadm"
-etcd_download_url: "https://github.com/coreos/etcd/releases/download/{{ etcd_version }}/etcd-{{ etcd_version }}-linux-{{ image_arch }}.tar.gz"
-cni_download_url: "https://github.com/containernetworking/plugins/releases/download/{{ cni_version }}/cni-plugins-linux-{{ image_arch }}-{{ cni_version }}.tgz"
+kubelet_download_url: "https://storage.googleapis.com.cnpmjs.org.cnpmjs.org/kubernetes-release/release/{{ kube_version }}/bin/linux/{{ image_arch }}/kubelet"
+kubectl_download_url: "https://storage.googleapis.com.cnpmjs.org.cnpmjs.org/kubernetes-release/release/{{ kube_version }}/bin/linux/{{ image_arch }}/kubectl"
+kubeadm_download_url: "https://storage.googleapis.com.cnpmjs.org.cnpmjs.org/kubernetes-release/release/{{ kubeadm_version }}/bin/linux/{{ image_arch }}/kubeadm"
+etcd_download_url: "https://mirror.azure.cn/kubernetes/etcd/etcd-{{ etcd_version }}-linux-{{ image_arch }}.tar.gz"
+cni_download_url: "https://mirror.azure.cn/kubernetes/containernetworking-plugins/cni-plugins-linux-{{ image_arch }}-{{ cni_version }}.tgz"
 calicoctl_download_url: "https://github.com/projectcalico/calicoctl/releases/download/{{ calico_ctl_version }}/calicoctl-linux-{{ image_arch }}"
 crictl_download_url: "https://github.com/kubernetes-sigs/cri-tools/releases/download/{{ crictl_version }}/crictl-{{ crictl_version }}-{{ ansible_system | lower }}-{{ image_arch }}.tar.gz"
 
@@ -496,7 +496,7 @@ azure_csi_livenessprobe_image_tag: "v1.1.0"
 azure_csi_plugin_image_repo: "mcr.microsoft.com/k8s/csi"
 azure_csi_plugin_image_tag: "v0.7.0"
 
-gcp_pd_csi_image_repo: "gke.gcr.io"
+gcp_pd_csi_image_repo: "gke.gcr.azk8s.cn"
 gcp_pd_csi_driver_image_tag: "v0.7.0-gke.0"
 gcp_pd_csi_provisioner_image_tag: "v1.5.0-gke.0"
 gcp_pd_csi_attacher_image_tag: "v2.1.1-gke.0"

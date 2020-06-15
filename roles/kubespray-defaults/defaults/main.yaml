@@ -252,10 +252,9 @@ docker_log_opts: "--log-opt max-size=50m --log-opt max-file=5"
 docker_insecure_registries: []
 
 ## A list of additional registry mirrors, for example China registry mirror. Empty by default.
-# docker_registry_mirrors:
-#   - https://registry.docker-cn.com
-#   - https://mirror.aliyuncs.com
-docker_registry_mirrors: []
+docker_registry_mirrors:
+  - https://mirror.aliyuncs.com
+  - https://registry.docker-cn.com
 
 ## If non-empty will override default system MounFlags value.
 ## This option takes a mount propagation flag: shared, slave

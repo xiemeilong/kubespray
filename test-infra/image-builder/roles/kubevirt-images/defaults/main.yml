@@ -2,13 +2,13 @@
 images_dir: /images/base
 
 docker_user: kubespray+buildvmimages
-docker_host: quay.io
-registry: quay.io/kubespray
+docker_host: quay.azk8s.cn
+registry: quay.azk8s.cn/kubespray
 
 images:
   ubuntu-1604:
     filename: xenial-server-cloudimg-amd64-disk1.img
-    url: https://storage.googleapis.com/kubespray-images/ubuntu/xenial-server-cloudimg-amd64-disk1.img
+    url: https://storage.googleapis.com.cnpmjs.org/kubespray-images/ubuntu/xenial-server-cloudimg-amd64-disk1.img
     checksum: sha256:c0d099383cd064390b568e20d1c39a9c68ba864764404b70f754a7b1b2f808f7
     converted: false
 
@@ -62,7 +62,7 @@ images:
 
   oracle-7:
     filename: oracle-linux-76.qcow2
-    url: https://storage.googleapis.com/born-images/oracle76/oracle-linux-76.qcow2
+    url: https://storage.googleapis.com.cnpmjs.org/born-images/oracle76/oracle-linux-76.qcow2
     checksum: sha256:f396c03e907fa2a0c94d6807b9f62622f23ee3499df4456ae2a15da381fbdca5
     converted: true
 

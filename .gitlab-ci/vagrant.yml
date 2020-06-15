@@ -4,7 +4,7 @@ molecule_tests:
   tags: [c3.small.x86]
   only: [/^pr-.*$/]
   except: ['triggers']
-  image: quay.io/kubespray/vagrant:$KUBESPRAY_VERSION
+  image: quay.azk8s.cn/kubespray/vagrant:$KUBESPRAY_VERSION
   services: []
   stage: deploy-part1
   before_script:
@@ -26,7 +26,7 @@ molecule_tests:
   tags: [c3.small.x86]
   only: [/^pr-.*$/]
   except: ['triggers']
-  image: quay.io/kubespray/vagrant:$KUBESPRAY_VERSION
+  image: quay.azk8s.cn/kubespray/vagrant:$KUBESPRAY_VERSION
   services: []
   before_script:
     - apt-get update && apt-get install -y python3-pip
