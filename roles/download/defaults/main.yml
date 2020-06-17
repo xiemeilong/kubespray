@@ -58,7 +58,7 @@ gcr_image_repo: "gcr.azk8s.cn"
 kube_image_repo: "k8s.gcr.azk8s.cn"
 
 # docker image repo define
-docker_image_repo: "mirror.aliyuncs.com"
+docker_image_repo: "dockerhub.azk8s.cn"
 
 # quay image repo define
 quay_image_repo: "quay.azk8s.cn"
