@@ -38,7 +38,7 @@ docker_insecure_registries:
 
 ## Add other registry,example China registry mirror.
 docker_registry_mirrors:
-  - https://mirror.aliyuncs.com
+  - https://dockerhub.azk8s.cn
   - https://registry.docker-cn.com
 
 ## If non-empty will override default system MountFlags value.
